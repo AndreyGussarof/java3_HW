@@ -1,0 +1,18 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="homework2.Client2.RegController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <Label text="Введите логин"/>
+    <TextField fx:id="loginField"/>
+    <Label text="Придумайте пароль"/>
+    <TextField fx:id="passField"/>
+    <Label text="Введите никнейм"/>
+    <TextField fx:id="nickField"/>
+
+    <HBox fx:id="bottomPanel" >
+        <Button fx:id="btnReg"  text="Регистрация" onAction="#clickReg"/>
+        <Button fx:id="btnClose"  text="Закрыть" onAction="#clickClose"/>
+    </HBox>
+
+</VBox>
