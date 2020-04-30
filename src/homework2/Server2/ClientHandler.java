@@ -42,7 +42,7 @@ public class ClientHandler {
 //                            } catch (IOException e) {
 //                                e.printStackTrace();
 //                            }
-////                            throw new RuntimeException("Клиент отключен за бездействие");
+//                            throw new RuntimeException("Клиент отключен за бездействие");
 //                        }
 //                    }).start();
 
@@ -56,7 +56,7 @@ public class ClientHandler {
                                     AuthService.getNickByLoginAndPass(token[1],token[2]);
                             if(newNick != null){
                                 if(!server.isNickAuthorized(newNick)){
-//                                      sendMsg("/authok");
+//
                                     // сразу передадим ник клиенту
                                     sendMsg("/authok "+newNick);
 
